@@ -1,0 +1,34 @@
+Configurando os arquivos
+	O arquivo mais importante do nosso projeto é o manifest.json. Ele é o ponto de partida de qualquer extensão. Nele descrevemos todas as propriedades do nosso projeto: desde o seu nome, autor, versão, até mesmo quais permissões ele irá solicitar e quais arquivos ele utilizará no seu ciclo de vida. Para extensões bem simples, este arquivo terá mais ou menos essa cara:
+----------------------------------------------------------------------------------------------------------------------------
+{
+    "manifest_version": 2,
+    "version": "0.0.1",
+    "name": "Hello World",
+    "description": "Extensão Hello World",
+    "author": "Diego Martins de Pinho",
+    "browser_action": {
+   	 "default_title": "Hello World",
+   	 "default_popup": "index.html",
+   	 "default_icon": "icon.png"
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------
+	Repare em algumas informações importantes que colocamos no arquivo:
+manifest_version: Essa é a versão do manifesto. Esse número é dado pela plataforma que dita as regras que serão utilizadas na interpretação do arquivo. Até o momento, está no 2.
+version, name, description, author: Estes campos representam exatamente o que os seus nomes indicam. Aqui, ditamos qual é a versão da extensão, o nome dela, sua descrição e o autor. Só é importante ressaltar que o número da versão é o que ditará o versionamento dentro da loja do Chrome.
+browser_action: Nesta propriedade dizemos ao Chrome qual é o comportamento padrão da nossa extensão. Para este caso, estamos dando um título e dizendo que a janela padrão é o código que está indicado na propriedade default_popup. Isso significa que sempre que o usuário clicar no ícone da extensão, essa janela abrirá.
+
+	Agora que temos a configuração feita, basta colocar um conteúdo dentro do index.html.
+----------------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+</body>
+</html>
+----------------------------------------------------------------------------------------------------------------------------
+	E pronto! Já temos a nossa extensão pronta! Agora vamos importá-la para dentro do navegador.

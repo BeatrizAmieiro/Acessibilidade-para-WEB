@@ -1,0 +1,18 @@
+html, html * {
+  color: #E3E3E3 !important;
+  background-color: #1A1A1A !important;
+}
+
+img, video {z-index: 1}
+* {border-color: #555555 !important}
+cite, cite * {color: #029833 !important}
+:link, :link * {color: #8db2e5 !important}
+input, textarea {background-color: #333333 !important}
+a {background-color: rgba(255, 255, 255, 0.01) !important}
+:visited, :visited * {color: rgb(255, 240, 0) !important}
+html, body, input, select, button {background-image: none !important}
+p { color:#E3E3E3 !important}
+ 
+video {
+  background-color: transparent !important;
+}

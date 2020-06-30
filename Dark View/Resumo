@@ -1,0 +1,22 @@
+Está usando Jquery e Common;
+
+Em background.js coloquei as referências do projeto em código aberto UserStyle.
+const CONFIG_URL="https://userstyles.org";
+
+Ainda em background.js criei uma página de boas vindas.
+{"install"==a.reason&&chrome.tabs.create({url:"boasvindas.html"} 
+
+Na pasta _locale foi conservado a linguagem original e colocamos a linguagem pt_BR.
+No manifest.json conservamos o inglês como lingua padrão.
+} ],
+   "default_locale": "en",
+
+Criamos ícones personalizados para o projeto em Manifest.json 
+"icons": {
+      "128": "img/128.png",
+      "32": "img/32.png",
+      "64": "img/64.png"
+
+Em inject.js foi declarado sites importantes com prefixos mais acessados, hospedado na pasta /custom, onde a extensão pode oferecer suporte a uma quantidade vasta de aplicações de estilo CSS linkado a pasta content_script/general .
+function injectImportantNativeStyles(){let a=document.documentElement.querySelectorAll('*');for(let b=0;b<a.length;b++)
+Os sites estão na pasta content_script/custom

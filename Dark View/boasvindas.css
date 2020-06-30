@@ -1,0 +1,30 @@
+body {
+  background-color: #1A1A1A;
+  color: #e3e3e3; 
+  font-size: 20pt;
+  } 
+
+h2{
+  text-align: center;
+}
+
+section {
+  width: 80%;
+	padding: 30px;
+	margin: 0 auto;
+}
+
+p{
+  text-align: justify;
+  margin: 30px;
+}
+
+input#fechar {
+  margin-left: 45%;
+  margin-right: 45%;
+}
+
+address{
+  font-size: 10pt;
+  text-align: center;
+}
